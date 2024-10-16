@@ -1,0 +1,21 @@
+[package]
+name = "file_traverser"
+authors = ["itsscb <dev@itsscb.de>"]
+version = "0.1.0"
+edition = "2021"
+license-file = "LICENSE.md"
+description = "file_traverser is a Rust crate designed for efficient file system traversal. It allows users to recursively explore directories and filter files based on customizable criteria. The crate supports both standard library `mpsc` and `crossbeam` channels through a trait, enabling flexible communication patterns for sending file paths. Ideal for applications that require asynchronous file processing, it combines ease of use with powerful functionality."
+repository = "https://github.com/pepperoni21/ollama-rs"
+readme = "README.md"
+
+[dependencies]
+crossbeam-channel = { version = "0.5.13", optional = true }
+rayon = "1.10.0"
+tracing = "0.1.40"
+
+[features]
+default = []
+crossbeam = ["crossbeam-channel"]
+
+[dev-dependencies]
+tokio = { version = "1.40.0", features = ["full"] }
