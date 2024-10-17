@@ -5,7 +5,7 @@ version = "0.1.0"
 edition = "2021"
 license-file = "LICENSE"
 description = "file_traverser is a Rust crate designed for efficient file system traversal. It allows users to recursively explore directories and filter files based on customizable criteria. The crate supports both standard library `mpsc` and `crossbeam` channels through a trait, enabling flexible communication patterns for sending file paths. Ideal for applications that require asynchronous file processing, it combines ease of use with powerful functionality."
-repository = "https://github.com/pepperoni21/ollama-rs"
+repository = "https://github.com/itsscb/file_traverser"
 readme = "README.md"
 
 [dependencies]
